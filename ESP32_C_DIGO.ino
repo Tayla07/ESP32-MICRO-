@@ -17,6 +17,6 @@ void loop()
 {
   cap = touchRead(T5);             // Sensor Capacitivo T0
   Serial.println(cap);            
-  ledcWrite(channel, (cap)*10);  // Reduz a luminosidade do LED de acordo com o valor do sensor x10.
+  ledcWrite(channel, (cap)*5);  // Reduz a luminosidade do LED de acordo com o valor do sensor x10.
   delay(500);
  }
